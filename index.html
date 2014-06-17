@@ -211,7 +211,7 @@
     <!-- new slide -->
     <article class='slide slide-list'>
       <h2>Tags that you should no longer use!</h2>
-      <p>It’s very important to create semantic, clean and valid markup before doing anything else. When we write HTML, we are only describing the content - not defining how out website looks (that's what CSS is for).</p>
+      <p>It’s very important to create semantic, clean and valid markup before doing anything else. When we write HTML, we are only describing the content - not defining how our website looks (that's what CSS is for).</p>
       <p>Here are a few examples of tags you should NEVER use:</p>
       <ul>
         <li>&#60;b&#62;I'm Bold text!&#60;/b&#62;</li>
@@ -398,7 +398,7 @@ p {
         <pre><code>&lt;tag attribute="value"&gt;(content to be modified by the tag)&lt;/tag&gt;</code></pre>
       <p>Where "tag" names the HTML element and "attribute" is the name of the attribute.</p>
       <p>Here's an example of an attribute that we've already seen today:</p>
-        <pre><code>&lt;a href="link.com"&gt;Click here&lt;/a&gt;</code></pre>
+        <pre><code>&lt;a href="http://link.com"&gt;Click here&lt;/a&gt;</code></pre>
       <p>In this case, "a" is the tag, "href" is the attribute and "http://link.com" is the value.</p>
     </article>
 
@@ -425,7 +425,7 @@ p {
         &lt;img src="http://placekitten.com/g/200/200"&gt;
       </code></pre>
       <p>Try copying and pasting that line of code into your project, right under the opening <code>&lt;body&gt;</code> tag.</p>
-      <p>Next, try finding a different image online and replacing the kitten photo.</p>
+      <p>Next, try finding a different image online and replace the kitten photo.</p>
     </article>
 
     <!-- SLIDE: HTML -->
@@ -843,7 +843,7 @@ h2 {
   background: pink;
 }
 </code></pre>
-      <li>So far, this looks pretty awfull. All the elements are too close to each other!</li>
+      <li>So far, this looks pretty awful. All the elements are too close to each other!</li>
       <img src="assets/bm1.png">
       </ul>
     </article>
@@ -987,7 +987,7 @@ img.logo {
     <!-- SLIDE CSS Box Model: Inline -->
     <article class="slide slide-list">
       <h2>Other Inline Elements</h2>
-      <p>Other common inline elements include <code>&lt;a>, &lt;strong>,</code> and <code>&lt;em></code>.</p>
+      <p>Other common inline elements include <code>&lt;a>, &lt;span>, &lt;strong>,</code> and <code>&lt;em></code>.</p>
       <p>Inline elements don't create line breaks, so they are usually tags that you might find inside a paragraph or in the middle of a sentence.</p>
     </article>
 
@@ -1049,7 +1049,7 @@ background-image: url('images/background.jpg');
     <article class="slide slide-list">
       <h2>Exercise: Add a background image</h2>
       <ul>
-        <li>Find a large image on your computer or on the internet and move it into the <strong>images</strong> folder in your project folder</li>
+        <li>Find a large image on your computer or on the internet and move it into the <strong>images</strong> folder in your project folder. <br>(A great resource for free high-res stock photos is <a href="http://unsplash.com/" target="_blank">unsplash.com</a>.)</li>
         <li>Add the image as a <code>background-image</code> for the new banner <code>&lt;section></code> we just made</li>
         <li>Adjust the <code>color</code> property for the section to something that contrasts with your background image</li>
         <li>Set the <code>text-align</code> property to <code>center</code> to centre the text</li>
@@ -1093,12 +1093,12 @@ section.banner {
     <!-- SLIDE CSS Child Selectors -->
     <article class="slide slide-list">
       <h2>CSS Child Selectors</h2>
-      <p>>You can write a <strong>child selector</strong> to select only those tags which are children of another tag.</p>
-      <p>We add a space between the parent and the child selector to specify:</p>
+      <p>You can write a <strong>child selector</strong> to select only those tags that are children of another tag.</p>
+      <p>We add a space between the parent and the child selector to indicate this relationship:</p>
 <pre><code class="language-css">
 section img {}
 </code></pre>
-      <p>The above selector will select only those <code>&lt;img></code> tags which are nested within <code>&lt;section></code> tags.</p>
+      <p>The above selector will select only those <code>&lt;img></code> tags that are nested within <code>&lt;section></code> tags.</p>
     </article>
 
     <!-- SLIDE CSS Exercise Child Selectors -->
@@ -1271,8 +1271,8 @@ section.contact img {
     <!-- SLIDE CSS Layout Classes -->
     <article class="slide slide-list">
       <h2>Styling Multiple Sections at Once</h2>
-      <p>All ofour sections could use some spacing - they're a bit too squished together.</p>
-      <p>Let's add some <code>padding</code> to our sections. Since we're adding the same amount of padding to each section, we can avoid repeating ourselves by adding a class to each section we'd like to style, and then targeting this class in our CSS.</p>
+      <p>All of our sections could use some spacing - they're a bit too squished together.</p>
+      <p>Let's add some <code>padding</code> to our sections. Since we're adding the same amount of padding to each section, we can avoid repeating ourselves by adding a class to each section we'd like to style, and then targeting this one class in our CSS.</p>
       <p>Add a class of <strong>box</strong> to each of the content <code>&lt;section></code>s (not including the banner section):</p>
 <pre><code class="language-markup">
 &lt;section class="about box">&lt;/section>
@@ -1407,7 +1407,7 @@ h1, h2, h3 {
     <article class="slide slide-list">
       <h2>Styling the Menu</h2>
       <p>We need to get our list items in a row.</p>
-      <p>Remember how we had <code>display: block;</code> and <code>display:inline;</code> properties?</p>
+      <p>Remember how we had <code>display: block;</code> and <code>display: inline;</code> properties?</p>
       <p>Neither of those is quite what we want, because <code>block</code> will create a new line for each element, and <code>inline</code> won't let us add padding to the list items.</p>
       <p>There's a third option that gives us the best of both worlds: <code>display: inline-block;</code></p>
       <p>Write a selector for the list items, and apply <code>display: inline-block;</code> as well as some padding to the top, bottom, and sides:</p>
